@@ -12,16 +12,17 @@
 vector<BooKItems> books;
 vector<Patron> patrons;
 vector<patronRecord> patronRecord;
-public:
+
   
  
  public:
  //SearchFunctionality
 
- string SearchBookByTitle(){
+ string SearchBookByTitle( string Titleserch){
+cin>>Titleserch;
 
  }
- string SearchBookByAuthor(){
+ string SearchBookByAuthor(string AuthorSearch){
 
  }
  string SearchBookByPatronName(){

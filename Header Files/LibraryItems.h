@@ -31,19 +31,24 @@ void Setduedate (string d){
 string Getduedatee (){
     return duedate;
 }
+
 void checkOut(){
-//Check out date code
+ SetisCheckedOut(true);
+ 
 }
  void returnItem(){
-    //return Item code
+    SetisCheckedOut(false);
  }
  int renewitems(int extradays){
     duedate +=extradays;
 
  }
+
 void markAsLost(){
 
-    //code for mark As Lost
+
 }
+    //code for mark As Lost
+};
 #endif  
-  };
+  
