@@ -12,15 +12,15 @@ vector<BooKItems>checkedOutItems;
 
 public:
 string Listcheckedoutbooks(){
-
+//Sherif u fit?
 
 }
 
 int GetBorrowedbookcount(){}
-
+//Sherif u fit?
 void HasOverduebooks(){}
-
+//Sherif u fit?
 int CalculateTotalLatefees(){}
-
+//Sherif u fit?
 };
 #endif

@@ -5,7 +5,7 @@
 #define LibratyItem_H
 using namespace std;
 
-class LibraryItem{
+class LibraryItems{
 private:
 string title;
 bool isCheckedOut;
@@ -17,12 +17,14 @@ void Settitle (string ti){
 }
 string Gettitle (){
     return title;
+    cout<<"----------------"<<title<<"---------------"<<endl;
 }
 void SetisCheckedOut (bool is){
     is = isCheckedOut;
 }
 bool GetisCheckedOut (){
     return isCheckedOut;
+    cout<<isCheckedOut<<endl;
 }
 
 void Setduedate (string d){

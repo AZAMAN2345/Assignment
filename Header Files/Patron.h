@@ -27,7 +27,14 @@ void GetName( string n){
  }
 
 string updateContactInfo(const string& newContactInfo){
-//update 
+string name;
+getline(cin,name);
+GetName(name);
+
+ int libraryCardNumber;
+ cin>>libraryCardNumber;
+ GetLibrary(libraryCardNumber);
+   
 
 }
 
