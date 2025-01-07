@@ -12,50 +12,55 @@ bool isCheckedOut;
 string duedate;
 
 public:
+LibraryItem(string t, bool ic, int d){
+title = t;
+isCheckedOut = ic;
+duedate = d;
+};
+
 void Settitle (string ti){
-    ti = title;
-}
+    title = ti;
+};
+
 string Gettitle (){
     return title;
     cout<<"----------------"<<title<<"---------------"<<endl;
-}
+};
+
 void SetisCheckedOut (bool is){
-    is = isCheckedOut;
-}
+    isCheckedOut = is;
+};
+
 bool GetisCheckedOut (){
     return isCheckedOut;
-    cout<<isCheckedOut<<endl;
-}
+};
 
 void Setduedate (string d){
-    d = duedate;
-}
-string Getduedatee (){
+    duedate = d;
+};
+
+string Getduedate (){
     return duedate;
-}
+};
 
 void checkOut(){
  SetisCheckedOut(true);
- 
-}
+};
+
  void returnItem(){
     SetisCheckedOut(false);
- }
- int renewitems(int extradays){
-    duedate +=extradays;
+ };
 
- }
+ void renewitems(int extradays){
+    duedate +=extradays;
+ };
 
 void markAsLost(){
-    // Edited by sherif
     std::cout << "The book (" << title << ") can not be found." << std::endl;
     // isCheckedOut and dueDate set to zero because book is missing.
     isCheckedOut = false;
     dueDate = 0;
-    // end 
-
-}
-    //code for mark As Lost
+};
 };
 #endif  
   
