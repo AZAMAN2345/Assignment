@@ -47,7 +47,12 @@ void checkOut(){
  }
 
 void markAsLost(){
-
+    // Edited by sherif
+    std::cout << "The book (" << title << ") can not be found." << std::endl;
+    // isCheckedOut and dueDate set to zero because book is missing.
+    isCheckedOut = false;
+    dueDate = 0;
+    // end 
 
 }
     //code for mark As Lost
