@@ -19,28 +19,30 @@ book(string t, string a, int i){
 
 void SetTitle(string t){
     Title =t;
-}
+};
 string GetTitle(){
 
     return Title;
 
-}
+};
 
 void SetAuthor(string a){
     Author = a;
-}
+};
+
 string GetAuthor(){
 
     return Author;
 
-}
+};
  
 void SetISBN (int i)
 {
     ISBN = i;
-}
+};
+
 int  GetISBN (){
     return ISBN;
-}
+};
  };
   #endif  
