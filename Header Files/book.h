@@ -11,6 +11,11 @@ string Author ;
 int ISBN ;
 
 public:
+book(string t, string a, int i){
+    Title = t;
+    Author = a;
+    ISBN = i;   
+};
 
 void SetTitle(string t){
     Title =t;
@@ -32,7 +37,7 @@ string GetAuthor(){
  
 void SetISBN (int i)
 {
-    i = ISBN;
+    ISBN = i;
 }
 int  GetISBN (){
     return ISBN;
