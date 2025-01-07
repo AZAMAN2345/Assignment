@@ -11,46 +11,41 @@ string Name;
 int LibraryCardNumber;
 
 public :
-void GetName( string n){
-    n = Name;
-}
- string SetName(){
+Patron(std::string n, double l){
+Name = n;
+LibraryCardNumber = l;
+};
+
+string GetName(){
     return Name;
- }
+};
+void SetName(string n){
+    Name = n;
+ };
 
- void GetLibrary(int L){
-    L = LibraryCardNumber;
- }
-
- int SetLibrary(){
+ int GetLibrary(){
     return LibraryCardNumber;
- }
+ };
+
+ void SetLibrary(int l){
+    LibraryCardNumber = l;
+ };
 
 string updateContactInfo(const string& newContactInfo){
-string name;
-getline(cin,name);
-GetName(name);
-
- int libraryCardNumber;
- cin>>libraryCardNumber;
- GetLibrary(libraryCardNumber);
-   
-
+    string contactInfo = newContactInfo;
+    return contactInfo;
+};
 }
 
-int canBorrowMoreBooks(int currentBorrowedCount, int maxLimit){
+void canBorrowMoreBooks(int currentBorrowedCount, int maxLimit){
     
 if (currentBorrowedCount >= maxLimit)
 {
    cout<<"You have reached yout borrow limit";
-}
+};
 
 else{ cout<<"Yes you can borrow "<<maxLimit-currentBorrowedCount<<" more books";
- 
+ };
 };
- 
-
-}
-
  };
 #endif
