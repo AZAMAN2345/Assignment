@@ -45,6 +45,13 @@ void printDetails(){
         std::cout << "The book is due in " << duedate << " days." << std::endl;
     };
 
+double calculateLateFees(int daysOverdue){
+        // Charges 1000 for the the first day overdue then charges 50 naira per day for subsequent days
+        double lateFees;
+        lateFees = 1000 + (50 * daysOverdue);
+        return lateFees;
+
+    };
  };
 
  #endif//BookItems
