@@ -13,7 +13,6 @@ vector<BooKItems>checkedOutItems;
 // Collects day(s) the book has been overdue for
  std::vector<int>checkoutBooksOverdueDate;
        
-
 public:
 PatronRecord(std::string p){
       patron_name = p;
@@ -77,6 +76,7 @@ PatronRecord(std::string p){
           std::cout<<"Total late fee is "<<f<<"."<<std::endl;
               
           };
+};
 
 
 #endif
