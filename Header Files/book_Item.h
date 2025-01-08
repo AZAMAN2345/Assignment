@@ -42,7 +42,7 @@ void printDetails(){
             std::cout << "The book is currently available."<< std::endl;
         }
 
-        std::cout << "The book is due in " << dueDate << " days." << std::endl;
+        std::cout << "The book is due in " << duedate << " days." << std::endl;
     };
 
  };
