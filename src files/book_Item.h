@@ -2,9 +2,9 @@
 #include<iostream>
 #ifndef BOOK_ITEM_H
 #define BOOK_ITEM_H
-#include"LibraryItems.h"
+#include"LibraryItem.h"
 using namespace std;
-class BooKItems: public LibraryItems{
+class BooKItems: public LibraryItem{
 
  private:
  string author;
@@ -33,16 +33,26 @@ string Getisbn(){
 };
 
 void printDetails(){
+string Title;
+string Authour;
+string Duedate;
+string Setduedate(Duedate);
+bool IscheckedOut = true;
+bool SetisCheckedOut(IscheckedOut);
+string Settitle(Title);
+
+
+
         std::cout << "Author : " << author << "." << std::endl;
         std::cout << "ISBN(International Standard Book Number) : " << isbn << "." << std::endl;
-        std::cout << "Title : " << title << "." << std::endl;
-        if (isCheckedOut == 1){
+        std::cout << "Title : " << Title << "." << std::endl;
+        if (IscheckedOut == true){
             std::cout << "The book is not available at the moment." << std::endl;
         } else {
             std::cout << "The book is currently available."<< std::endl;
         }
 
-        std::cout << "The book is due in " << duedate << " days." << std::endl;
+        std::cout << "The book is due in " << Duedate << " days." << std::endl;
     };
 
 double calculateLateFees(int daysOverdue){
