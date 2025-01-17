@@ -7,19 +7,19 @@
 using namespace std;
 class patronRecord
 {private:
- std::string patron_name;
+string patron_name;
 // Collects name of checked out book 
-vector<BooKItems>checkedOutItems;
+vector<string>checkedOutItems;
 // Collects day(s) the book has been overdue for
- std::vector<int>checkoutBooksOverdueDate;
+ vector<int>checkoutBooksOverdueDate;
        
 public:
-PatronRecord(std::string p){
+patronRecord(std::string p){
       patron_name = p;
       };
       //Function to add a book
-      void addBook(vector <string> book, int daysOverdue){
-          checkedOutItems.push_back(book);
+      void addBook(string book, int daysOverdue){
+         checkedOutItems.push_back(book);
            checkoutBooksOverdueDate.push_back(daysOverdue);
       };
 
@@ -76,6 +76,4 @@ PatronRecord(std::string p){
               
           };
 };
-
-
 #endif

@@ -10,21 +10,24 @@
 #include<vector>
 using namespace std;
  int main(){
-
+string title1 ="Sample Book";
+string Authour1 = "Sample Author ";
+int ISBN = 20220975;
   //Book
-    Book bookOne("title1", "author1", 123456);
-    std::cout<<bookOne.getAuthor()<<std::endl;
-    std::cout<<bookOne.getISBN()<<std::endl;
-    bookOne.setAuthor("author2");
-    std::cout<<bookOne.getAuthor()<<std::endl;
+    book bookOne(title1, Authour1, ISBN);
+    std::cout<<bookOne.GetAuthor()<<std::endl;
+    std::cout<<bookOne.GetISBN()<<std::endl;
+    bookOne.SetAuthor("author2");
+    std::cout<<bookOne.GetAuthor()<<std::endl;
     std::cout<<""<<std::endl;
 
     //Patron
-    Patron patronOne("patron1", 1234);
-    patronOne.getName();
-    std::cout<<patronOne.getLibCardNo()<<std::endl;
-    patronOne.setLibCardNo(1256);
-    std::cout<<patronOne.getLibCardNo()<<std::endl;
+    string PatronName = "Patron1";
+    Patron patronOne(PatronName, 1234);
+    patronOne.GetName();
+    std::cout<<patronOne.GetLibrary()<<std::endl;
+    patronOne.GetLibrary();
+    std::cout<<patronOne.GetLibrary()<<std::endl;
     std::cout<<patronOne.updateContactInfo("Emmanuel")<<std::endl;
     patronOne.canBorrowMoreBooks(2,3);
     std::cout<<""<<std::endl;
@@ -33,24 +36,24 @@ using namespace std;
     LibraryItem libraryitem("title 6", false, 5);
     libraryitem.checkOut();
     libraryitem.returnItem();
-    libraryitem.renewItem(10);
+    libraryitem.renewitems(10);
     libraryitem.markAsLost();
     std::cout<<""<<std::endl;
 
 
     //BookItem
-    BookItem obj2("author2", 200, "title2", false, 20);
-    std::cout<<obj2.getAuthor()<<std::endl;
+    BooKItems obj2("author2", 200, "title2", false, 20);
+    std::cout<<obj2.Getauthor()<<std::endl;
     obj2.printDetails();
     obj2.checkOut();
     obj2.printDetails();
-    obj2.renewItem(30);
+    obj2.renewitems(30);
     obj2.printDetails();
     obj2.markAsLost();
     obj2.calculateLateFees(20);
 
     //PatronRecord
-   PatronRecord patron1("henry");
+   patronRecord patron1("henry");
    patron1.addBook("Book 1", 20);
    patron1.addBook("Book 2", 20);
    patron1.addBook("Book 3", 0);

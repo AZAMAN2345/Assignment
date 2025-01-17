@@ -35,8 +35,6 @@ string updateContactInfo(const string& newContactInfo){
     string contactInfo = newContactInfo;
     return contactInfo;
 };
-};
-
 void canBorrowMoreBooks(int currentBorrowedCount, int maxLimit){
     
 if (currentBorrowedCount >= maxLimit)
@@ -49,8 +47,6 @@ if (currentBorrowedCount >= maxLimit)
    
  };
 };
+};
 
-
- 
- 
-#endif
+ #endif

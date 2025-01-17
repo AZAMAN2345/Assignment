@@ -18,7 +18,7 @@ vector<patronRecord> patronRecord;
  public:
  //SearchFunctionality
 
- string SearchBookByTitle( string Titleserch){
+ string SearchBookByTitle(string Titleserch){
 cin>>Titleserch;
 
  }
