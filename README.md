@@ -3,7 +3,7 @@
 This C++ program models a simple library system. It includes classes for:
 
 * **Book:**
-    * Stores book information: ISBN, title, author, availability (boolean).
+    * Stores book information: ISBN, title, author, availability.
     * Provides methods for checking out and checking in books.
 
 * **Patron:**
